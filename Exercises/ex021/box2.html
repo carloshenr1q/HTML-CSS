@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de tags</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(138, 138, 138);
+        }
+        header{
+            text-align: center;
+            width: auto;
+            height: auto;
+
+            padding: 10px;
+
+            border: 7px groove rgb(255, 255, 255);
+            border-radius: 5px;
+
+            margin: 10px auto 20px auto;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 3px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.336);
+        }
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+        }
+        nav:hover > a{
+            color: greenyellow;
+        }
+        header > na{
+            display: none;
+        }
+        header:hover > nav{
+            display: block;
+        }
+            
+        main{
+            text-align: justify;
+            text-indent: 10px;
+            background-color: rgb(190, 190, 190);
+            width: 600px;
+
+            border: 3px ridge rgb(0, 0, 0);
+            border-radius: 20px 20px 2px;
+            box-shadow: 5px 10px 5px 2px rgba(0, 0, 0, 0.336);
+
+            padding: 20px 10px;
+
+            margin-bottom: 5px;
+            margin-left: 5px;
+
+        }
+        .ocult{
+            display: none;
+        }
+        .ocult:hover{
+            display: block;
+        }
+        footer{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+
+            border: 3px ridge rgb(255, 208, 0);
+            border-radius: 10px;
+
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Título 1
+        </h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>
+                    Título do Brasil
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aspernatur quae illum? Sequi iure odit fugiat saepe eum placeat nesciunt, laudantium aut cumque? Perferendis velit fugiat quibusdam, consequuntur similique tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, ratione sequi totam rem vel facilis, alias dolor quas rerum maxime voluptate optio sed, sunt pariatur commodi? Libero soluta expedita corporis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam aliquam praesentium fugit, voluptates ut, maiores commodi minus laboriosam laborum corrupti repellendus alias asperiores neque fuga incidunt, nisi inventore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quidem repellendus natus quasi, corrupti itaque, blanditiis, dolores enim laborum aspernatur dolorum alias voluptatum nihil ab dolore quas modi assumenda quae.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nisi id rem necessitatibus minus. Expedita voluptatum harum eveniet consequatur qui illo, iusto consequuntur illum amet, ipsam veritatis explicabo dolor quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam magnam ex! Adipisci ratione perferendis voluptatum sapiente cumque, rerum facilis minus qui aliquid sequi nam voluptates excepturi magnam? Non, laudantium!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta laboriosam cum eum impedit fugit, ipsam nobis placeat ratione, aut repellat voluptas reiciendis distinctio perferendis repellendus! In accusamus eaque aspernatur mollitia!
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste saepe, nemo vel nulla molestiae in! Qui enim minus iure praesentium laboriosam eum error, quia at eius pariatur molestias numquam aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eligendi eaque similique. Optio, officiis porro esse delectus doloremque ex inventore rerum illum ducimus, sapiente quisquam ab consectetur dolorem culpa quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsam officia iusto sit consectetur recusandae labore excepturi at delectus repudiandae dolores minus odio aut, accusamus ea cumque, enim ipsum quae!
+                </p>
+            </article>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="a">Início</a></li>
+                <li>Categorias</li>
+                    <ul class="ocult" type="square">
+                        <li><a href="">Política</a></li>
+                        <li><a href="">Futebol</a></li>
+                        <li><a href="">Economia</a></li>
+                        <li><a href="">Educação</a></li>
+                        <li><a href="">Saúde</a></li>
+                    </ul>
+                <li><a href="">Configurações</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    
+    <footer>
+        Em desenvolvimento
+    </footer>
+    
+</body>
+</html>

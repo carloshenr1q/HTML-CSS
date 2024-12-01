@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens no HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1> 
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagem/pequeno.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="imagem/medio.png" type="image/png">
+            <img src="imagem/grande.png" alt="">
+
+        
+        </picture>
+        <h1>
+            Áudio
+        </h1>
+        <p>
+        <audio autoplay controls src="midia/【推しの子】第2期ノンクレジットオープニング｜GEMN「ファタール」.mp3"></audio>
+        </p>
+        <p>
+            <audio preload="metadata" controls loop>
+                <source src="midia/TVアニメ進撃の巨人The Final Season Part 2ノンクレジットOP SiMThe Rumbling.mp3" type="audio/mpeg">
+            </audio>
+        </p>
+
+    
+</body>
+</html>

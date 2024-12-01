@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: azure;
+    
+}

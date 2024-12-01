@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Imagem de Fundo e PNG Centralizado</title>
+    <style>
+        /* Definindo o estilo do body para ter o fundo completo */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(img/espaco.jpg); /* Imagem de fundo grande */
+            background-size: cover; /* Cobre toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            background-attachment: fixed; /* Fixa a imagem para um efeito parallax leve */
+        }
+
+        /* Centralizando a imagem menor */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imagem-menor {
+            max-width: 30%; /* Define o tamanho máximo como 50% da largura da tela */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 768px) {
+            .imagem-menor {
+                max-width: 80%; /* Ajusta a imagem menor para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="img/astronauta.png" alt="Imagem Centralizada" class="imagem-menor">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(8, 33, 145);
+}
+a:active{
+    color: rgb(0, 151, 33);
+}
+a:visited{
+    color: rgb(172, 0, 0);
+}
+a::after{
+    content: "⛧";
+}
+a::before{
+    content: "⚝";
+}
+.generic{
+    font-size: 20px;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display:block;
+}

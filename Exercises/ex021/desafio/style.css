@@ -1,0 +1,150 @@
+@UTF-8;
+
+@font-face{
+    font-family: 'android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf');
+    format:('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: #39ff8cbd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    header{
+    background-image: linear-gradient(180deg, #3CD781, #1A5E38);
+    margin-top: -17px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+#princ{
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.568);
+}
+#secund{
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.534);
+}
+nav{
+    background-color: #207042;
+    padding: 7px 15px;
+}
+.menu{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    margin-right: 15px;
+}
+main{
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#terc{
+    padding: 3px ;
+}
+h1{
+    font-family: android;
+    font-size: 26px;
+    color: #155f38;
+    padding-left: 10px;
+}
+h2{
+    font-family: android;
+    background-image: linear-gradient(60deg, #35fc566c, rgba(255, 255, 255, 0.425));
+    color: #166b3e;
+    padding-left: 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 25px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+strong{
+    color: #1A5C39;
+}
+article{
+    margin: 1%;
+    width: ;
+}
+img{
+    text-align: center;
+}
+.center3{
+    background-color: red;
+}
+ .center4{
+    display: block;
+    
+    width: 100%;
+    margin: auto;
+
+ }
+.center{
+    background-color: red;
+}
+ .center2{
+    display: block;
+    
+    width: 40%;
+    margin: auto;
+
+ }
+ aside{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    margin: 1px;
+ }
+
+iframe{
+    display: block;
+    width: 90%;
+    height: 572px;
+    margin: auto;
+    border:25px solid #134629;
+}
+a{
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: disc;
+    margin: 0;
+    padding: auto;
+    width: 45%;
+}
+h4{
+    color: white;
+    background-color: #36be71;
+    padding: 10px 7px;
+    border-radius: 10px 10px 0px 0px;
+}
+#green{
+    background-color: #3cd7823a;
+    padding-bottom: 10px;
+}
+.p{
+    margin: 15px 9px;
+}
+footer{
+    background-color: #155f38;
+}
+#final{
+    color: white;
+    text-align: center;
+    padding: 10px 1px;
+}
