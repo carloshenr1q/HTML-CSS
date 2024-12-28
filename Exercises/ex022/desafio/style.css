@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Source+Sans+3:wght@200..900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Source+Sans+3:wght@200..900&family=Sriracha&display=swap');
+
+:root{
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive; 
+
+    --color1: black;
+    --color2: white;
+    --transparente: rgba(0, 0, 0, 0.401);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+}
+
+
+header{
+    text-align: center;
+
+    background-color: var(--color1);
+}
+header h1{
+    font-family: var(--fonte1);
+    font-size: 9vw;
+    color: var(--color2);
+    font-weight: bold;
+
+    padding-top: 50px;
+    margin: auto;
+}
+header p{
+    color: var(--color2);
+
+    margin-top: 10px;
+    margin: auto;
+    
+}
+header a{
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: bold;
+
+    margin: auto;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+main article{
+    width: 100%;
+}
+main div{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+main p{
+    font-family: var(--fonte2);
+    text-indent: 30px;
+    font-size: 3.5vw;
+
+    padding-top: 5px;
+}
+main #img1{
+    background: var(--color1) url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+main .transparente{
+    background-color: var(--transparente);
+    width: 45vw;
+    color: var(--color2);
+    
+}
