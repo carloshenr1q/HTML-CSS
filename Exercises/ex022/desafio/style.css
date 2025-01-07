@@ -92,6 +92,14 @@ main .transparente p{
     
     width: 42.5vw;
 }
+main .transparente2 p{
+    color: var(--color2);
+    text-indent: 5px;
+
+    background-color: var(--transparente);
+    
+    width: 43.5vw;
+}
 
 
 footer{
