@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- 
+        Anatomia para tabelas grandes
+            TABLE
+                THEAD
+                    <tr>, <td>, <th>
+                TBODY
+                    <tr>, <td>, <th>
+                TFOOT
+                    <tr>, <td>, <th>
+    -->
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: gray;
+            text-align: center;
+            font-weight: bold;
+        }
+        td{
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        .pib{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <th></th>
+            <th>País</th>
+            <th>PIB</th>
+            <th>Ano</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td class="name">Estados Unidos (EUA)</td>
+                <td class="pib">28,781,083</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td class="name">China</td>
+                <td class="pib">18,532,633</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td class="name">Alemanha</td>
+                <td class="pib">4,591,100</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td class="name">Japão</td>
+                <td class="pib">4,110,452</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td class="name">Índia</td>
+                <td class="pib">3,937,011</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td class="name">Reino Unido</td>
+                <td class="pib">3,495,261</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td class="name">França</td>
+                <td class="pib">3,130,014</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td class="name">Brasil</td>
+                <td class="pib">2,331,391</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td class="name">Itália</td>
+                <td class="pib">2,328,028</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td class="name">Canadá</td>
+                <td class="pib">2,242,182</td>
+                <td>2024</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>PIB Total</td>
+                <td>101,560,901</td>
+                <td>-</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
