@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        colgroup > #col1{
+            background-color: blue;
+        }
+        colgroup > #col2{
+            background-color: blueviolet;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead{
+            background-color: rgba(0, 0, 0, 0.500);
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(0, 0, 0, 0.253);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col span="2" id="col1">
+            <col span="2" id="col2">
+        </colgroup>
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juliana</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Nutricionista</td>
+            </tr>
+            <tr>
+                <td>Celeste</td>
+                <td>M</td>
+                <td>44</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>F</td>
+                <td>31</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Claúdio</td>
+                <td>M</td>
+                <td>37</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Vendedora</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
