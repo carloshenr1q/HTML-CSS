@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(img/fundo-madeira.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        #iphone{
+            display: inline;
+            position: absolute;
+            top: 25vh;
+            left: 25vw;
+            width: 50vw;
+            height: 50vh;
+            background: url(img/frame-iphone.png) no-repeat center center;
+            background-size: contain;
+            z-index: 10;
+        }
+        div#iphone > iframe{
+            border: 0px solid black;
+            display: inline;      
+            margin-top: 5.4vh;
+            margin-left: 13.3vw;
+            width: 23vw;
+            height: 40vh;
+        }
+        #menu{
+            text-align: right;
+            margin-top: 25vh;
+        }
+        div#menu a > img{
+            margin-bottom: 5px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="iphone">
+        <iframe srcdoc="
+        <style>{
+            body{margin: 0; padding: 0;}
+            img{width: 23vw height: 40vh}
+        }
+    </style>
+        <body>
+            <img src='img/tela-home.jpg'>
+        </body>
+        
+        " frameborder="0" ></iframe>
+    </div>
+    <!-- <div id="menu">
+        <a href=""><img src="img/logo-home.jpg" alt=""></a>
+        <br>
+        <a href=""><img src="img/logo-github.jpg" alt=""></a>
+        <br>
+        <a href=""><img src="img/logo-facebook.jpg" alt=""></a>
+        <br>
+        <a href=""><img src="img/logo-instagram.jpg" alt=""></a>
+        <br>
+        <a href=""><img src="img/logo-twitter.jpg" alt=""></a>
+        <br>
+        <a href=""><img src="img/logo-home.jpg" alt=""></a>
+    </div> -->
+</body>
+</html>
