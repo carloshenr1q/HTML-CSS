@@ -10,34 +10,49 @@
             padding: 0;
         }
         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background: url(img/fundo-madeira.jpg) no-repeat center center fixed;
             background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
         }
         #iphone{
-            display: inline;
-            position: absolute;
-            top: 25vh;
-            left: 25vw;
-            width: 50vw;
-            height: 50vh;
-            background: url(img/frame-iphone.png) no-repeat center center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 240px;
+            height: 481px;
+            background: url(img/frame-iphone.png) no-repeat center;
             background-size: contain;
             z-index: 10;
         }
         div#iphone > iframe{
-            border: 0px solid black;
-            display: inline;      
-            margin-top: 5.4vh;
-            margin-left: 13.3vw;
-            width: 23vw;
-            height: 40vh;
+            margin-top: 61px;
+            margin-left: 18px;
+            width: 230px;
+            height: 400px;
+            border: none;
+            overflow: visible;
+            scrollbar-width: none;
+        }
+        div#iphone > iframe::-webkit-scrollbar{
+            display: none;
         }
         #menu{
-            text-align: right;
-            margin-top: 25vh;
+            position: absolute;
+            top: 25vh;
+            padding-right: 4px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         div#menu a > img{
-            margin-bottom: 5px;
+            margin-bottom: -15px;
             width: 50px;
             border-radius: 50%;
         }
@@ -45,30 +60,20 @@
 </head>
 <body>
     <div id="iphone">
-        <iframe srcdoc="
-        <style>{
-            body{margin: 0; padding: 0;}
-            img{width: 23vw height: 40vh}
-        }
-    </style>
-        <body>
-            <img src='img/tela-home.jpg'>
-        </body>
-        
-        " frameborder="0" ></iframe>
+        <iframe src="sites/menu.html" name="frame"></iframe>
     </div>
-    <!-- <div id="menu">
-        <a href=""><img src="img/logo-home.jpg" alt=""></a>
+    <div id="menu">
+        <a href="sites/menu.html" target="frame"><img src="img/logo-home.jpg" name="display" alt=""></a>
         <br>
-        <a href=""><img src="img/logo-github.jpg" alt=""></a>
+        <a href="" target="frame"><img src="img/logo-github.jpg" alt=""></a>
         <br>
-        <a href=""><img src="img/logo-facebook.jpg" alt=""></a>
+        <a href="" target="frame"><img src="img/logo-facebook.jpg" alt=""></a>
         <br>
-        <a href=""><img src="img/logo-instagram.jpg" alt=""></a>
+        <a href="sites/instagram.html" target="frame" name="display"><img src="img/logo-instagram.jpg"  alt=""></a>
         <br>
-        <a href=""><img src="img/logo-twitter.jpg" alt=""></a>
+        <a href="" target="frame"><img src="img/logo-twitter.jpg" alt=""></a>
         <br>
-        <a href=""><img src="img/logo-home.jpg" alt=""></a>
-    </div> -->
+        <a href="" target="frame"><img src="img/logo-home.jpg" alt=""></a>
+    </div>
 </body>
 </html>
