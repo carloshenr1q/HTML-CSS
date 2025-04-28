@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA IMPRESSORA */
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+header{
+    text-align: center;
+}
+header > h1 {
+    font-size: 35px;
+    margin: 15px;
+}
+header > menu {
+    display: none;
+}
+main{
+    display: block;
+}
+main > article{
+    text-align: justify;
+}
+main > article > h2{
+    margin-bottom: 20px;
+}
+main > aside::after{
+    content: "Esse artigo foi impresso no site noticias.com.br";
+    font-family: Arial, Helvetica, sans-serif;
+}

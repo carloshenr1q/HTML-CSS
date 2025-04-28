@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA TELA */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+}
+header > h1 {
+    font-size: 35px;
+    margin: 15px;
+}
+header > menu{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+menu > a{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 15px;
+    transition: all 1s;
+}
+menu > a:hover{
+    background-color: white;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+main{
+    display: block;
+}
+main > article{
+    text-align: justify;
+    padding: 0px 30px;
+    margin: auto;
+    max-width: 800px;
+}
+main > article > h2{
+    margin-bottom: 20px;
+}
