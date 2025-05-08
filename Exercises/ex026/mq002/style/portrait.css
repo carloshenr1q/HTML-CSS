@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* PARA ORIENTAÇÃO RETRATO (PORTRAIT) */
+
+html, body{
+    background-image: url(../image/cev-portrait.jpg);
+    background-position: center bottom;
+}

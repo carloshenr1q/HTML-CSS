@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-/* PARA ORIENTAÇÃO PAISAGEM (LANDSCAPE */
+/* PARA ORIENTAÇÃO PAISAGEM (LANDSCAPE) */
+
+html, body{
+    background-image: url(../image/cev-landscape.jpg);
+    background-position: left bottom;
+}
