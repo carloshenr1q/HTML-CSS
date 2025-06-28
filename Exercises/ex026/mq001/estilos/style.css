@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* ESTILOS PARA TELA */
 
@@ -6,18 +8,35 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-family: Arial, sans-serif;
+
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color: rgba(255, 221, 176, 0.63);
+}
 header{
     text-align: center;
 }
 header > h1 {
-    font-size: 35px;
-    margin: 15px;
+    font-family: Cinzel;
+    font-size: 3.5em;
+    font-weight: bolder;
+    background-color: rgb(201, 171, 132);
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+
+    padding: 30px 20px;
 }
-header > menu{
+header > h1 > large{
+    font-size: 1.5em;
+}
+header > menu#menu{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 5px;
 }
-menu > a{
+menu#menu > a{
     background-color: rgba(0, 0, 0, 0.5);
     color: rgb(238, 238, 238);
     text-decoration: none;
@@ -27,7 +46,7 @@ menu > a{
     margin-left: 15px;
     transition: all 1s;
 }
-menu > a:hover{
+menu#menu > a:hover{
     background-color: white;
     color: black;
     padding-left: 50px;
@@ -35,13 +54,64 @@ menu > a:hover{
 }
 main{
     display: block;
+    padding: 0px 50px;
 }
 main > article{
-    text-align: justify;
-    padding: 0px 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px 0px 15px 0px;
+
+    padding: 10px 20px;
     margin: auto;
+    margin-top: 30px;
     max-width: 800px;
 }
-main > article > h2{
-    margin-bottom: 20px;
+article > div{
+    margin-bottom: 30px;
+}
+article > div#noticia > h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+article > div#noticia > p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+article > div#noticia > div{
+    color: gray;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+article > div.img > img{
+    width: 100%;
+}article > div.img{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+main > article > h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4em;
+    margin: 5px 0px;
+}
+main > article > p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 20px;
+}
+article > aside{
+    margin: 50px 0px 10px 0px;
+}
+article > aside > ul > li{
+    display: inline;
+    margin-right: 10px;
+    background-color: lightgray;
+    padding: 5px;
 }
