@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #00060D;
+    --color2: #343F40;
+    --color3: #667173;
+    --color4: #9CA5A6;
+    --color5: #B8BFBE;
+}
+/* TABLETS */
+@media only screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(to top, var(--color1), var(--color5));
+    }
+    div.display{
+        width: 65vw;
+        max-width: 900px;
+        height: 330px;
+
+        flex-direction: row;
+        display: flex;
+    }
+    div.display > div.img{
+        width: 50%;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+    div.display > div.login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* DESKTOPS */
+@media only screen and (min-width: 1025px){
+    div.display{
+        height: 390px;
+        max-width: 1050px;
+        flex-direction: row-reverse;
+    }
+    div.display > div.img{
+        border-radius: 0 15px 15px 0;
+    }
+}

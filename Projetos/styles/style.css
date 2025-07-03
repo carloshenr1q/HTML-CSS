@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color1: #00060D;
+    --color2: #343F40;
+    --color3: #667173;
+    --color4: #9CA5A6;
+    --color5: #B8BFBE;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color3);
+  display: flex;
+}
+div.display{
+  background-color: snow;
+  color: black;
+
+  width: 340px;
+  height: 70vh;
+  margin: auto;
+  border-radius: 20px;
+  border: solid 5px var(--color1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.display > div.img{
+  background: url(../image/pexels-pixabay-268883.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  height: 40vh;
+  width: 100%;
+}
+div.display > div.login{
+  height: 60vh;
+  padding: 15px 10px 15px 10px;
+}
+div.display > div.login > div.text > h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+div.display > div.login > div.text > p{
+  padding-bottom: 5px;
+}
+div.input > form > div{
+  background-color: var(--color3);
+
+  height: 45px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+
+  display: flex;
+}
+div.input > form > div > label{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form > .input-email > label > span.material-symbols-outlined{
+  color: white;
+  padding: 8px;
+  font-size: 26px;
+  display: flex;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24
+}
+form > .input-password > label > span.material-symbols-outlined{
+  color: white;
+  padding: 8px;
+  font-size: 26px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24
+}
+div.input > form > div > label > input#iemail, input#ipassword{
+  padding: 0 5px;
+  margin: 5px 5px 5px 0;
+  border-radius: 5px;
+  border: none;
+
+  height: 35px;
+  width: 100%;
+
+  transition: all 0.2s ease;
+}
+div.input > form > div > label > input:focus{
+  background-color: var(--color2);
+  color: white;
+}
+div.input > form > div > label > input::placeholder{
+  color: var(--color5);
+  font-weight: 500;
+}
+div.input > form > div.input-submit > label > input#isubmit{
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 15px;
+
+  height: 45px;
+  width: 100%;
+
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+div.input > form > div.input-submit > label > input#isubmit:focus{
+  background-color: var(--color2);
+}
+div.input > form > div.input-forgot > label{
+  background-color: snow;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.input > form > div.input-forgot > label > a{
+  color: black;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid 1px var(--color1);
+  
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+div.input > form > div.input-forgot > label > a:focus{
+  background-color: var(--color2);
+  color: white;
+}
+div.input > form > div.input-forgot > label > a > span.material-symbols-outlined{
+  font-size: 23px;
+  margin: 0 5px;
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 24
+  }
+}
