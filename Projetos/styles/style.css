@@ -39,7 +39,7 @@ div.display{
   align-items: center;
   flex-direction: column;
 
-    transition: width .3s height .3s;
+  transition: width .3s, height .3s;
 }
 div.display > div.img{
   background: url(../image/pexels-pixabay-268883.jpg) no-repeat center center;
