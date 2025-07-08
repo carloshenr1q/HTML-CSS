@@ -32,14 +32,14 @@ div.display{
   height: 70vh;
   margin: auto;
   border-radius: 20px;
-  border: solid 5px var(--color1);
+  border: solid 3px var(--color1);
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  transition: width .3s, height .3s;
+  transition: width .5s, height .5s ease;
 }
 div.display > div.img{
   background: url(../image/pexels-pixabay-268883.jpg) no-repeat center center;
@@ -103,7 +103,7 @@ form > .input-password > label > span.material-symbols-outlined{
 }
 div.input > form > div > label > input#iemail, input#ipassword{
   padding: 0 5px;
-  margin: 5px 5px 5px 0;
+  margin: 5px 5px 5px 0px;
   border-radius: 5px;
   border: none;
 
@@ -115,6 +115,7 @@ div.input > form > div > label > input#iemail, input#ipassword{
 div.input > form > div > label > input:focus{
   background-color: var(--color2);
   color: white;
+  outline: none;
 }
 div.input > form > div > label > input::placeholder{
   color: var(--color5);
@@ -124,7 +125,7 @@ div.input > form > div.input-submit > label > input#isubmit{
   background-color: transparent;
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
 
   height: 45px;
   width: 100%;

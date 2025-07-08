@@ -21,6 +21,7 @@
     }
     section#login{
         width: 80vw;
+        height: 280px;
     }
     section#login > div#imagem{
         float: left;
@@ -30,6 +31,7 @@
     section#login > div#formulario{
         float: right;
         width: 70%;
+        height: 100%;
     }
 }
 
@@ -39,6 +41,7 @@
     }
     section#login{
         width: 950px;
+        height: 350px;
     }
     section#login > div#imagem{
         float: right;
@@ -47,14 +50,16 @@
     }
     section#login > div#formulario{
         float: left;
-        width: 60%;
+        width: 50%;
+        height: 100%;
     }
     div#formulario > h1{
-        font-size: 1.2em;;
+        font-size: 1.2em;
         text-align: center;
         margin-bottom: 10px;
     }
     div#formulario > p{
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin: 10px 0;
     }
 }
