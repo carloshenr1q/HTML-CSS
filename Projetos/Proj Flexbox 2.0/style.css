@@ -10,13 +10,10 @@
 
 
 body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+
 }
 main{
-    width: 100vw;
-    height: 100vh;
+
 
     display: flex;
     flex-flow: column nowrap;
@@ -38,11 +35,11 @@ main > section.box-grey{
 }
 
 section#wrap-reverse{
-    width: 100vw;
+
     flex-flow: row wrap-reverse;
 }
 section#wrap{
-    width: 100vw;
+
     flex-flow: row wrap;
 }
 section#wrap-reverse > article#text{
@@ -53,7 +50,7 @@ section#wrap-reverse > article#img{
     flex: 1 1 40vw;
 }
 section#wrap-reverse > article#img > img{
-    width: 250px;
+    width: 200px;
     margin: auto;
 }
 section#wrap > article#text{
