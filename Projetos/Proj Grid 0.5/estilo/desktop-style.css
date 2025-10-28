@@ -1,0 +1,31 @@
+main{
+    grid-template-columns: 25px auto auto 25px;
+    align-content: center;
+    justify-content: center;
+
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 15px;
+}
+main > div.espaço1{
+    grid-area: 1 / 1 / -1 / 2;
+}
+main > section.ficha{
+    grid-area: 1 / 2 / 2 / 3;
+    max-width: 330px;
+    max-height: auto;
+    border-radius: 10px;
+}
+main > section.ficha > p{
+    line-height: 1.6;
+}
+main > section.detalhes{
+    grid-area: 1 / 3 / -1 / 4;
+    max-width: 830px;
+}
+main > section.detalhes > article.apresentação > iframe{
+    height: 410px;
+}
+main > div.espaço2{
+    grid-area: 1 / 4 / -1 / -1;
+}

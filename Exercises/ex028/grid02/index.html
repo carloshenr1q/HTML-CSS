@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div.container{
+            border: 2px solid yellow;
+
+            display: grid;
+        /*  grid-template-rows: 100px 100px 100px;
+            grid-template-columns: auto auto auto; */
+            grid-template: 100px 100px 100px /
+                           auto auto auto;
+            
+            grid-auto-columns: 100px;
+            grid-auto-rows: 100px;
+
+        /*  align-items: stretch;
+            justify-items: center; */
+            place-items: stretch center;
+
+        /*  align-content: start;
+            justify-content: end; */
+            place-content: start end;
+        }
+        div.container > div{
+            border: 1px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+    </div>
+</body>
+</html>
