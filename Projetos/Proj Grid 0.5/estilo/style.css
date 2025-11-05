@@ -29,7 +29,7 @@ html{
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5em;
+    line-height: 1.5em;
 
     background-color: var(--color4);
     width: 100%;
@@ -41,16 +41,15 @@ header{
     background-color: var(--color2);
     width: 100%;
     height: 45px;
+
     display: flex;
-    
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     transition: all .5s ease-in-out;
 }
 header > nav{
     width: auto;
     height: 45px;
-    margin-right: 25px;
     
     display: flex;
     justify-content: space-around;
@@ -103,9 +102,8 @@ main > section.ficha > div.perfil{
 
     transition: all .5s ease-in-out;
 }
-main > section.ficha > div.perfil > div.img{
-    background: url(/imagens/guanabara-perfil.jpg) center center no-repeat scroll;
-    background-size: cover;
+main > section.ficha > div.perfil > img{
+    object-fit: cover;
     width: 100%;
     height: 100%;  
     border-radius: 50%;
@@ -118,6 +116,7 @@ main > section.ficha > h1{
 }
 main > section.ficha > p{
     color: var(--color6);
+    transition: all .5s ease-in-out;
 }
 main > section.ficha > div.link{
     width: 180px;
@@ -275,6 +274,7 @@ main > section.detalhes > article.projetos > div.projeto > div:hover{
 }
 main > section.detalhes > article.projetos > div.projeto > div > img{
     width: 100%;
+    max-width: 400px;
     border-radius: 6px;
     object-fit: cover;
 }

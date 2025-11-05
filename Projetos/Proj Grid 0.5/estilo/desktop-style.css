@@ -1,3 +1,9 @@
+header{
+    justify-content: flex-end;
+}
+header > nav{
+    margin-right: 25px;
+}
 main{
     grid-template-columns: 25px auto auto 25px;
     align-content: center;
